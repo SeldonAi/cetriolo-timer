@@ -30,7 +30,6 @@ The **Cucumber Timer** is here to remind you that your time is not fixed; like a
 
 ## Demo Video
 
-Check out the **demo video** (insert your link here) to see the Cucumber Timer in action.
 <div align="center">
   <img src="assets/images/tutorial.gif" alt="Demo GIF of Cetriolo Timer">
 </div>
