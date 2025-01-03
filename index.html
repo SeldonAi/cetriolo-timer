@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Timer e Statistiche</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/cetriolo_slice.png" sizes="128x128">
+
+  
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+  
+  <!-- CSS principale -->
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  >
+</head>
+<body class="light">
+  <!-- Contenitori in alto a destra: Switch tema e Mute Alarm -->
+  <div class="top-right-controls">
+    <div class="theme-switch" id="themeSwitch"></div>
+    <button class="button" id="muteBtn">Mute Alarm</button>
+  </div>
+
+  <!-- Barra di Navigazione -->
+  <div class="nav-tabs">
+    <button class="tab-link active" data-tab="cetriolo">Cetriolo</button>
+    <button class="tab-link" data-tab="statistiche">Stat</button>
+  </div>
+
+  <!-- Contenuto delle Tabs -->
+  <div class="tab-content">
+    <!-- Tab Cetriolo -->
+    <div class="tab active" id="cetriolo">
+      <div class="circle">
+        <h1 id="modeText">Timer</h1>
+        <div class="time" id="timeDisplay">00:00</div>
+      </div>
+      
+      <!-- Sezione Personal Goal con Rotella -->
+      <div class="personal-goal">
+        <input type="range" id="goalRange" min="0" max="900" step="1">
+        <label for="goalInput">Study objective (minutes):</label>
+        <input type="number" id="goalInput" min="1" value="60">
+        <span class="time-display" id="goalTimeDisplay">01:00</span>
+      </div>
+    
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    
+      <!-- Controlli -->
+      <div class="controls">
+        <button class="button-main" id="startBtn">Start</button>
+        <button class="button-main" id="pauseBtn">Pause</button>
+        <button class="button-main" id="resetBtn">Reset</button>
+        <button class="button-main" id="breakBtn">Tea &amp; Coffee</button>
+      </div>
+    
+      <!-- Barra del Tempo Studiato Totale -->
+      <div class="total-study-bar">
+        <div class="label-box" id="totalStudiedTimeDisplay">Total Study Time: 00:00</div>
+        <button class="button-main" id="resetTotalBtn">Reset Totale</button>
+      </div>
+    
+      <!-- Contenitore per la gif della pausa -->
+      <div class="cup-container" id="cupContainer" style="display:none;">
+        <!-- GIF di pausa -->
+        <img src="assets/images/la_mia_GIF.gif" alt="Pausa" />
+      </div>
+    
+      <!-- Audio di notifica su fine pausa -->
+      <audio id="alarmSound" src="assets/audio/il_mio_SUONO.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Tab Statistiche -->
+    <div class="tab" id="statistiche">
+      <div class="statistics-container">
+        <div class="statistics-buttons">
+          <button data-period="week">Settimana</button>
+          <button data-period="month">Mese</button>
+          <button data-period="year">Anno</button>
+        </div>
+        <div class="chart-container">
+          <canvas id="statsChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Librerie JavaScript esterne (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  
+  <!-- Script principale -->
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>
