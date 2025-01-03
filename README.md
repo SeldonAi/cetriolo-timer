@@ -4,17 +4,17 @@ A simple and flexible **time management tool** designed to help you adapt your s
 
 ---
 
-## Philosophy of the **Cucumber Timer**
+## Philosophy of the **Cetriolo Timer**
 
-The **Cucumber Timer** is inspired by the philosophy of the cucumber: just as a cucumber can grow to different lengths depending on the season and time of year, our study or work time can vary based on the time of day and our mood.
+The **Cetriolo Timer** is inspired by the philosophy of the cucumber: just as a cucumber can grow to different lengths depending on the season and time of year, our study or work time can vary based on the time of day and our mood.
 
-This app helps you **adapt your study or work rhythm** to your daily needs, just like a cucumber adapts to its environment to grow. With the **Cucumber Timer**, you can manage your time flexibly, balancing productivity and breaks naturally.
+This app helps you **adapt your study or work rhythm** to your daily needs, just like a cucumber adapts to its environment to grow. With the **Cetriolo Timer**, you can manage your time flexibly, balancing productivity and breaks naturally.
 
 - **Morning?** You might prefer longer and more intense sessions.
 - **Afternoon?** Shorter but more frequent sessions might work best.
 - **Evening?** A more relaxed approach could be the way to go.
 
-The **Cucumber Timer** is here to remind you that your time is not fixed; like a cucumber, it can grow, adapt, and change depending on **how you feel and what you need**.
+The **Cetriolo Timer** is here to remind you that your time is not fixed; like a cucumber, it can grow, adapt, and change depending on **how you feel and what you need**.
 
 ---
 
@@ -55,5 +55,5 @@ That’s it! You’re ready to start tracking your time like a cucumber grows in
 
 This project is licensed under the [Apache License 2.0](./LICENSE).
 
-Enjoy growing your productivity with the **Cucumber Timer**! 🥒
+Enjoy growing your productivity with the **Cetriolo Timer**! 🥒
 
